@@ -35,7 +35,7 @@ while players_move != 'q' :
     elif (computer_move == 'r' and players_move == 's') :
         print('Rock defeats Scissors')
         print('You lose !, Computer wins, Try again ')
-        no_of_losses + no_of_losses + 1
+        no_of_losses = no_of_losses + 1
     elif (computer_move == 's' and players_move == 'r') :
         print('Rock defeats Scissors')
         print('You win!!')
@@ -48,8 +48,12 @@ while players_move != 'q' :
         print('Scissors defeats Paper')
         print('You win!!')
         no_of_wins = no_of_wins + 1
-    else  :
+    elif (computer_move == players_move) :
         print('There is a tie')
         no_of_ties = no_of_ties + 1
-    
+    elif (players_move == 'q') : 
+        print('You ended the game. See you soon')
+    elss
+        print('Wrong input')
+        print('Input r for ROCK, p for PAPER, s for SCISSORS or q to QUIT this game')
         
