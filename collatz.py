@@ -8,5 +8,8 @@ def collatz(number) :
                 print(number)
             continue  
 number = int(input('Input a Number'))
+# TODO : Help me add a try except statement preventing non integer input from users
+# QUESTION: Can you do it?
+
 result = (collatz(number))
     
