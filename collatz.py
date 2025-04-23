@@ -7,9 +7,9 @@ def collatz(number) :
                 number = 3 * number + 1  
                 print(number)
             continue  
-number = int(input('Input a Number'))
-# TODO : Help me add a try except statement preventing non integer input from users
-# QUESTION: Can you do it?
-
-result = (collatz(number))
+try:
+    number = int(input('Input a Number: '))
+    result = collatz(number)
+except ValueError:
+    print("Invalid input. Please enter an integer.")
     
