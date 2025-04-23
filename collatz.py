@@ -9,9 +9,12 @@ def collatz(number) :
             continue  
 while True : 
     try:
-        number = int(input('Input a Number: '))
+        number = int(input('Input a Number: (Input the code 886 to end this operation)'))
         result = collatz(number)
     except ValueError:
         print("Invalid input. Please enter an integer.")
-    
+    if number == 886 :
+        break 
+
+
     
