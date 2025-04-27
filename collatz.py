@@ -7,9 +7,14 @@ def collatz(number) :
                 number = 3 * number + 1  
                 print(number)
             continue  
-try:
-    number = int(input('Input a Number: '))
-    result = collatz(number)
-except ValueError:
-    print("Invalid input. Please enter an integer.")
+while True : 
+    try:
+        number = int(input('Input a Number: (Input the code 886 to end this operation)'))
+        result = collatz(number)
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+    if number == 886 :
+        break 
+
+
     
