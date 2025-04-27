@@ -2,8 +2,11 @@
 import random
 #creating an empty list to store the results
 results = []
+#getting user input for number of trials
+print(" I can help you calculate the probability of getting a streak of 6 head or and tails in a given number of coin tosses")
+user_input = int(input('Input the amount of tail you want me to randomly flip the coin.')
 #a random 0 equates to tails and a 1 to heads
-for i in range(10000) :
+for i in range(user_input) :
     #generating a random number
     coin = random.randint(0, 1)
     results.append(coin)
